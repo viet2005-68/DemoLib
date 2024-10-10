@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demodb.HelloController">
+   <children>
+      <TableView fx:id="bookView" prefHeight="252.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tittleBook" prefWidth="160.66663110256195" text="Tittle" />
+          <TableColumn fx:id="authorBook" prefWidth="129.99998474121094" text="Author" />
+            <TableColumn fx:id="isbnBook" prefWidth="105.33331298828125" text="ISBN" />
+            <TableColumn fx:id="yearBook" prefWidth="59.33331298828125" text="Year" />
+            <TableColumn fx:id="imageBook" prefWidth="146.00003051757812" text="Image" />
+        </columns>
+      </TableView>
+      <TextField fx:id="querySeach" prefHeight="25.0" prefWidth="416.0" />
+      <Button mnemonicParsing="false" onAction="#searchBookOnAction" text="Search" />
+      <Button mnemonicParsing="false" onAction="#addOnAction" text="Add" />
+      <Button mnemonicParsing="false" onAction="#ShowOnAction" text="Show" />
+      <ProgressIndicator fx:id="progress" progress="0.0" />
+   </children>
+</VBox>
